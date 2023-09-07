@@ -20,7 +20,6 @@ body {
     flex-grow: 1;
     align-items: stretch;
 }
-
 .box {
     display: flex;
     flex: 1;
@@ -29,7 +28,6 @@ body {
     margin: 3px;
     padding: 3px;
 }
-
 .container > .rows:first-child {
     height: calc(100vh - 5px);
     width: 100%;
@@ -37,4 +35,15 @@ body {
 .container > .cols:first-child {
     height: calc(100vh - 5px);
     width: 100%;
+}
+.tab {
+    display: table;
+    width: 100%;
+}
+.tab .row {
+    display: table-row;
+}
+.tab .row .box {
+    display: table-cell;
+    border: 0;
 }
